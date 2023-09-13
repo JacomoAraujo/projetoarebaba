@@ -1,3 +1,9 @@
+function obterTamBalao() {
+  balaoType = document.getElementsByName('balao')
+}
+
+
+
 function calculaCilindros (balaoType, unidadesBalao){
   event.preventDefault()
   let unidadesBalao = 0
@@ -23,6 +29,8 @@ function calculaCilindros (balaoType, unidadesBalao){
   if (balaoType == "balaoTam10"){
     cilindrosGH = unidadesBalao/70
   }
+
+  if (checkbox.c) 
 
   precoFinal = precoCilindro * cilindrosGH
 
