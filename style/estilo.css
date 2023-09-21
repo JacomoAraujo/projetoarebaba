@@ -1,11 +1,11 @@
 body{
-    background-color: #F5F5F5;
+    
+    background: linear-gradient();
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{ 
     background-color: #E9E9E9;
     margin: auto;
-    display: block;
 
     width: 600px;
 
@@ -14,8 +14,28 @@ body{
     overflow: hidden;
     padding: 32px;
 }
+.col-1{
+    width: 50%;
+    padding: 10px 20px;
+}
+.col-2{
+    width: 50%;
+    padding: 10px 20px;
+}
+.flex-container {
+    display: flex;
+
+    justify-content: space-around;
+}
+.calculo{
+    margin-top: 16px;
+}
+.infos{
+    margin-top: 32px;
+}
 h1{
     text-align: center;
+
 }
 img{
     text-align: center;
@@ -26,9 +46,20 @@ img{
 .contact{
     padding-bottom: 24px;
 }
-#info{
-    font-weight: 500;
-}
+
 input{
     width: max-content,;
+}
+a{
+    color: #000;
+    font-weight: bold;
+}
+a:hover{
+    color:  #0723f672;
+}
+h2{
+    text-align: center;
+}
+h3{
+    margin-top: 0;
 }
