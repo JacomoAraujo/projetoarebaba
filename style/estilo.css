@@ -1,10 +1,11 @@
 body{
     
-    background: linear-gradient();
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{ 
     background-color: #E9E9E9;
+    
     margin: auto;
 
     width: 600px;
@@ -35,6 +36,7 @@ body{
 }
 h1{
     text-align: center;
+    font-family: Geneva, sans-serif;
 
 }
 img{
@@ -48,7 +50,12 @@ img{
 }
 
 input{
-    width: max-content,;
+    width: max-content;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 a{
     color: #000;
@@ -62,4 +69,31 @@ h2{
 }
 h3{
     margin-top: 0;
+}
+.contact{
+    margin-top: 32px;
+}
+button{
+    border-radius: 3px;
+    padding: 3px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(39, 3, 198);
+    color: #E9E9E9;
+}
+@media screen and (max-width: 620px) {
+    html {
+        font-size: 12px;
+    }
+    .container{
+        width: 80%;
+        text-align: center;
+    }
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
 }

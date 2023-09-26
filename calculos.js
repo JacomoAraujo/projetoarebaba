@@ -1,5 +1,6 @@
-function calculaCilindros (){
+function calculaCilindros (event){  
   event.preventDefault()
+  // criando as váriaveis
   let unidadesBalao = 0
   let balaoType = ""
   let nome = ""
@@ -9,6 +10,14 @@ function calculaCilindros (){
   unidadesBalao = document.getElementById("unidadesBalao").value;
   nome = document.getElementById("nome").value;
 
+  //Tratando situações de Erro na quantidade de balões
+  if(!unidadesBalao ){
+    alert("Digite a quantidade de balões!!")
+  }
+  if(unidadesBalao < 0){
+    alert("Digite um número positivo maior que Zero")
+  }
+  // Checkando qual tamanho de balão foi selecionado
   const radioInputs = document.querySelectorAll('input[name="balao"]');
   for (const radioInput of radioInputs) {
   if (radioInput.checked) {
@@ -16,7 +25,6 @@ function calculaCilindros (){
     break; // Sai do loop assim que encontrar o input selecionado.
   }
 }
-
 
   if (balaoType == "balaoTam8"){
     cilindrosGH = unidadesBalao/100
@@ -29,6 +37,7 @@ function calculaCilindros (){
   }
 
  
+  // Cálculo com cada tamanho de balão
 
   const precoFinal = precoCilindro * cilindrosGH
 

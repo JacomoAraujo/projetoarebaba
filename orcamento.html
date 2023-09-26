@@ -5,59 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orçamento Online</title>
-    <link rel="stylesheet" href="style/estilo.css"/>
+    <link rel="stylesheet" href="style/estilo.css"/> <!-- Conectando o CSS-->
 </head>
 
 
 <div>
-    <div class="container">
+    <div class="container">  <!-- Criando a Area para o conteúdo -->
         <h1>Arebaba Balões</h1>
+        <div class="imagem"><img src="image/ballon.png"
+        alt="Ballon" width="200"/></div>   <!-- Carregando imagem -->
         <h2>Orçamento Online</h2>
 
-        <div class="flex-container">
-            <div class="col-1">
+        <div class="flex-container">  <!-- Criando uma sub area pra duas colunas-->
+            <div class="col-1">             <!-- Coluna 01 -->
                 <h3>Informações para contato</h3>
 
                 <label for="nome">Nome:</label>
                 <br>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome"
+                placeholder=" Ex: Joao Paulo">
                 <br>
 
                 <label for="telefone">Telefone para contato:</label>
                 <br>
-                <input type="text" name="telefone" id="telefone" maxlength="11">
+                <input type="text" name="telefone" id="telefone" maxlength="11"
+                placeholder="Somente números">
                 <br>
 
-
+                <label for ="email">Digite seu Email: </label>
+                <br>
+                <input type="text" name="email" id="email"
+                placeholder="Ex: joaozinho@gmail.com">
+ 
                 <label id="info">Informações sobre a Festa</label>
                 <br>
 
                 <label for="dataFesta">Qual a data da festa?</label>
                 <br>
 
-                <input type="date" name="dataFesta" id="dataFesta">
+                <input type="date" name="dataFesta" id="dataFesta"> 
                 <br>
-
-                <div>Escolha o horario da festa:</div>
-                <input type="radio" name="horaFesta" id="manha">
-                <label for="horaFesta">Manhã</label>  
-                <input type="radio" name="horaFesta" id="tarde">
-                <label for="horaFesta">Tarde</label>
-                <input type="radio" name="horaFesta" id="noite">
-                <label for="horaFesta">Noite</label>
-            
+                <header>
+                <a href="sobre.html">Sobre nós</a> <!-- Conexão entre as Abas -->
+                <br>
+                <a href="contato.html">Contato</a> <!-- Conexão entre as Abas -->
+                <br>
+                </header>
 
                 
             </div>    
 
-            <div class="col-2">
+            <div class="col-2">   <!-- Coluna 02-->
                 <h3>Tamanho dos Balões</h3>
 
-                <input type="checkbox" name="balao" id="balaoTam8" value="balaoTam8">
+                <input type="radio" name="balao" id="balaoTam8" value="balaoTam8">
                 <label for="balaoTam8">Balão Tamanho 8</label><br>
-                <input type="checkbox" name="balao" id="balaoTam9" value="balaoTam9">
+                <input type="radio" name="balao" id="balaoTam9" value="balaoTam9">
                 <label for="balaoTam9">Balão Tamanho 9</label><br>
-                <input type="checkbox" name="balao" id="balaoTam10" value="balaoTam10">
+                <input type="radio" name="balao" id="balaoTam10" value="balaoTam10">
                 <label for="balaoTam10">Balão Tamanho 10</label>
                 <br>
 
@@ -67,22 +72,24 @@
                 <input type="number" name="unidadesBalao" id="unidadesBalao">
                 <br>
 
-                <button id="calcular" onclick="calculaCilindros()">Calcular</button>
+                <button id="calcular" onclick="calculaCilindros(event)">Calcular 🎈 </button>
 
                 <div class="calculo">
-                    <div>Valor de Cada Cilindro: R$130,00 </div>
+                    <div>Valor de Cada Cilindro 🧯: R$130,00 </div>
                     <div id="cilindrosGH"></div>
                     <div id="precoFinal"></div>
                 </div>
+                <div class="contact">Como prefere ser contatado </div>
+                <input type="checkbox" name="contato" id="whatsapp">
+                <label for="contato">Whatsapp</label>  
+                <input type="checkbox" name="contato" id="email">
+                <label for="contato">E-mail</label>
+
             </div>
         </div>
-        <header>
-                <a href="sobre.html">Sobre nós</a>
-                <br>
-                <a href="contato.html">Contato</a>
-        </header>
+        
     </div>
 
-    <script src="calculos.js"></script>
+    <script src="calculos.js"></script>   <!--Conectando o Script Java-->
 </body>
 </html>
