@@ -31,9 +31,7 @@ body{
 .calculo{
     margin-top: 16px;
 }
-.infos{
-    margin-top: 32px;
-}
+
 h1{
     text-align: center;
     font-family: Geneva, sans-serif;
@@ -81,6 +79,11 @@ button{
 button:hover{
     background-color: rgb(39, 3, 198);
     color: #E9E9E9;
+}
+header{
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
 }
 @media screen and (max-width: 620px) {
     html {
